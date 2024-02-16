@@ -1,3 +1,4 @@
+// This In Language Translate
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 

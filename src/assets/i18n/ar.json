@@ -1,5 +1,7 @@
 {
+    
     "auth":{
+        
         "Register":"تسجيل",
         "Login":"الدخول",
         "Student":"طالب",

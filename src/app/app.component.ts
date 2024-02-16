@@ -9,7 +9,7 @@ import {TranslateService} from "@ngx-translate/core";
 export class AppComponent {
   title = 'MCQ_Exam';
   lang :any;
-
+// This In Language Translate
 
   constructor(
     private authService : AuthService,

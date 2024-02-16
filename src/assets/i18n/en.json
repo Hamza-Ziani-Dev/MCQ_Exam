@@ -1,5 +1,6 @@
 {
     "auth":{
+        
         "Register":"Register",
         "Login":"Login",
         "Student":"Student",
