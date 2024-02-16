@@ -1,0 +1,31 @@
+.navbar {
+    color: #fff;
+    width: 100%;
+    background-color: #f44336;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    z-index: 999;
+}
+li .nav-link {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+        border-bottom: 1px solid transparent;
+        padding: 10px;
+        margin: 5px 0;
+        text-decoration: none;
+    }
+
+
+    .navbar-brand  {
+        font-size: 32px!important;
+        color: #FFF;
+        padding: 10px;
+       
+    } 
+    img {
+        display: inline-block;
+        width: 40px;
+    }

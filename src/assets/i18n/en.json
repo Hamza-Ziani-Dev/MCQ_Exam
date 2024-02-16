@@ -1,0 +1,16 @@
+{
+    "auth":{
+        "Register":"Register",
+        "Login":"Login",
+        "Student":"Student",
+        "Doctor": "Doctor",
+        "Email": "Email",
+        "Password": "Password",
+        "Signup":"Signup",
+        "Logout":"خروج",
+        "NewTask":"NewTask",
+        "Modules":"Modules",
+        "Students":"Students",
+        "Final":"Final"
+    }
+}

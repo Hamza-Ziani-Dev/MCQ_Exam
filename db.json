@@ -1,0 +1,53 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "username": "Hamza",
+      "email": "Hamza@gmail.com",
+      "password": "123"
+    }
+  ],
+  "doctor": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "123"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "c984",
+      "name": "اللغة العربية",
+      "questions": [
+        {
+          "question": "ما هي اللغة العربية",
+          "answer1": "لغة ضاد",
+          "answer2": "لاشيء",
+          "answer3": "ليست بلغة",
+          "answer4": "لغة جميلة",
+          "correctAnswer": "لغة ضاد"
+        }
+      ]
+    },
+    {
+      "id": "c81b",
+      "name": "Francais",
+      "questions": [
+        {
+          "question": "Quel Le Nom",
+          "answer1": "Hamza",
+          "answer2": "Aya",
+          "answer3": "Zakaria",
+          "answer4": "Aicha",
+          "correctAnswer": "Hamza"
+        }
+      ]
+    }
+  ],
+  "login": [
+    {
+      "id": "1"
+    }
+  ]
+}

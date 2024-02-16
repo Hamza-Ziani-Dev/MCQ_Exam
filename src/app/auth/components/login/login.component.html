@@ -1,0 +1,32 @@
+<div class="login">
+    <div class="text-center loginhead">
+        <h2>{{"auth.Login" | translate}}</h2>
+    </div>
+    <form [formGroup]="loginForm">
+        <div class="row">
+            <div class="col-sm-12 mb-3">        
+                <mat-radio-group (change)="getRole($event)" formControlName="type"> 
+                    <mat-radio-button value="students" [checked]=""  class="w-25" color="warn">{{"auth.Student" | translate}}</mat-radio-button>
+                    <mat-radio-button value="doctor" [checked]=""  class="w-25" color="warn">{{"auth.Doctor" | translate}}</mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <div class="col-md-6 col-sm-12">          
+                <mat-form-field appearance="outline" color="warn">                    
+                    <mat-label>{{"auth.Email" | translate}} *</mat-label>
+                    <input matInput type="email" formControlName="email" >
+                </mat-form-field>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <mat-form-field appearance="outline" color="warn">
+                    <mat-label> {{"auth.Password" | translate}} </mat-label>
+                    <input matInput type="password"  formControlName="password">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="text-right loginfoot">
+            <a routerLink="/register" color="primary"> {{"auth.Signup" | translate}} </a>&nbsp;&nbsp;
+            <button mat-raised-button color="warn" (click)="login()" >{{"auth.Login" | translate}}</button>
+        </div>
+     </form>
+</div>

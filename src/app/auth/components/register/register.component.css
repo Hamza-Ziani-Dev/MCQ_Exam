@@ -1,0 +1,81 @@
+.register {
+  --bg-light: #efefef;
+  --bg-orange: #f44336;
+  --clr: #665d53;
+  --clr-alpha: #bebdbb60;
+  width: 60%;
+  margin: 100px auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.register .registhead {
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+
+.register .registhead h2 {
+  display: inline-block;
+  padding: 5px 88px;
+  background-color: #f44336;
+  border-radius: 30px;
+  font-size: 28px;
+  color: #FFF;
+}
+.register mat-form-field {
+  width: 100%;
+}
+
+
+
+
+
+.register .registfoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.register .registfoot button {
+  margin-top: 15px;
+  padding: 0px 30px;
+  font-size: 18px;
+}
+.custom-disabled-button {
+  background-color: #757575;
+  color: #ffffff; 
+}
+
+.custom-valid-button {
+  background-color: #f44336; 
+  color: #ffffff; 
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+.alert-danger {
+  background-color: #f44336c4;
+  color:#FFF;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+
+/* Media Query for Tablets (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .register {
+    width: 80%;
+  }
+}
+
+/* Media Query for Mobile Devices (max-width: 767px) */
+@media screen and (max-width: 767px) {
+  .register {
+    width: 90%;
+  }
+}
