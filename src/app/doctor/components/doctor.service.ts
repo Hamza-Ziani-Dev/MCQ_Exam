@@ -24,6 +24,12 @@ export class DoctorService {
   }
 
 
+
+    // Get One Subject
+    getSubject(id:any){
+      return this.http.get(environment.baseApi+'subjects/'+id );
+    }
+  
   // Get All Subjects:
   getAllSubjects(){
     return this.http.get(environment.baseApi+'subjects');

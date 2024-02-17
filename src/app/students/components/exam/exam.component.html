@@ -1,1 +1,41 @@
-<p>exam works!</p>
+<div class="examBox">
+    <div class="examhead text-center"><h2>اختبار {{subjects?.name}}</h2></div>
+    <div class="quizBox" *ngFor="let subject of subjects?.questions; let index=index;">
+        <strong ><span class="text-danger">سؤال {{ index + 1}}</span> {{subject?.question}}</strong>
+        <div class="row mt-3" >
+            <div class="col-md-6 col-sm-12">
+                <mat-radio-button  *ngIf="users?.role == 'students' && !showResult" (change)="getValueInswer($event)" name="{{index}}"  value="{{subject.answer1}}" color="warn"></mat-radio-button>
+                <label>A_ {{subject?.answer1}}</label>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <mat-radio-button  *ngIf="users?.role == 'students' && !showResult" (change)="getValueInswer($event)" name="{{index}}" value="{{subject.answer2}}"  color="warn"></mat-radio-button>
+                <label>B_ {{subject?.answer2}}</label>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <mat-radio-button *ngIf="users?.role == 'students' && !showResult" (change)="getValueInswer($event)" name="{{index}}" value="{{subject.answer3}}"  color="warn"></mat-radio-button>
+                <label>C_ {{subject?.answer3}}</label>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <mat-radio-button  *ngIf="users?.role == 'students' && !showResult" (change)="getValueInswer($event)" name="{{index}}"  value="{{subject.answer4}}" color="warn"></mat-radio-button>
+                <label>D_ {{subject?.answer4}}</label>
+            </div>
+        </div>
+        <div class="text-start">
+            <button *ngIf="users?.role == 'doctor' " mat-raised-button color="warn" (click)="delete(index)" class="mx-1">حذف</button>
+        </div>
+        <hr>
+         <div class="text-center" *ngIf="users?.role == 'students'" >
+            <div *ngIf="showResult"  class="text-success fs-5" >النتيجة :{{total}} / {{subjects?.questions.length}}</div>
+           <button *ngIf="!showResult"  class="btn btn-success px-5 fs-5" (click)="getResultat()"> النتيجة</button>
+        
+
+        </div>
+         
+       
+    </div>
+   
+
+</div>
